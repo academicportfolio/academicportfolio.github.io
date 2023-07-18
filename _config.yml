@@ -1,0 +1,73 @@
+name: Arnob Karmokar
+tagline: Electrical and Electronic Engineer
+career-objective: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac sapien vel sem tristique consequat ac eu magna. Nulla condimentum erat quis enim tempor consequat. Duis tincidunt tortor nec eleifend sollicitudin. Ut elementum purus nibh, at laoreet lorem hendrerit a. Proin est nulla, tempus ut ultrices nec, efficitur eu lorem. Ut dapibus eros at arcu viverra venenatis.
+color-theme: red # red or blue
+url: academicportfolio.github.io
+baseurl: /
+social:
+  email: 
+    visibility: true
+    mail: contact@arnob.me
+  github: 
+    visibility: true
+    handle: arnobk
+  linkedin: 
+    visibility: true
+    handle: arnobkarmokar
+  twitter: 
+    visibility: true
+    handle: arnobdotme
+
+collections:
+  experience:
+    output: false
+    sort_by: order
+  education:
+    output: false
+    sort_by: order
+  projects:
+    output: true
+    sort_by: year
+  skills:
+    output: false
+    sort_by: order
+  publications:
+    output: true
+    sort_by: year
+  certifications:
+    output: false
+    sort_by: year
+  achievements:
+    output: false
+    sort_by: year
+
+collection_option:
+  experience: 
+    label: Experience
+    visibility: true
+  education: 
+    label: Education
+    visibility: true
+  projects: 
+    label: Projects
+    visibility: true
+  skills: 
+    label: Technical Skills
+    visibility: true
+  publications: 
+    label: Publications
+    visibility: true
+  certifications: 
+    label: Certifications
+    visibility: true
+  achievements: 
+    label: Achievements
+    visibility: true
+
+navigation:
+- title: About
+  url: /
+- title: Blog
+  url: /blog.html
+- title: Contact
+  url: /contact.html

@@ -1,0 +1,479 @@
+---
+---
+{% if site.color-theme == "blue" %}
+$link: #0099ff;
+{% elsif site.color-theme == "red" %}
+$link: #862B0D;
+{% endif %}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #999999;
+}
+
+a:hover {
+    text-decoration: underline;
+
+}
+
+.ap-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 64px;
+}
+
+.ap-avater {
+    height: 48px;
+    width: 48px;
+    border-radius: 24px;
+}
+
+.ap-title {
+    font-family: "Syne", serif;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: -1px;
+    line-height: 1.2em;
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+
+.ap-tagline {
+    font-family: "Syne", serif;
+    font-weight: 400;
+    color: #555555;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.ap-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.ap-nav ul li {
+    margin: 0;
+    margin-top: 16px;
+    float: left;
+    padding-right: 16px;
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+
+.ap-nav ul li .ap-active {
+    text-decoration: none;
+    cursor: default;
+    color: #000 !important;
+}
+
+.ap-line {
+    height: 1px;
+    margin: 36px 0;
+    background-color: #eee;
+}
+
+.ap-content {
+    font-family: "Manrope", serif;
+    font-weight: 500;
+    color: #444444;
+    font-size: 16px;
+    line-height: 1.6em;
+}
+
+.ap-content a {
+    text-decoration: none;
+    color: #ff0000;
+}
+
+.ap-content a:hover {
+    text-decoration: underline;
+}
+
+.ap-block {
+    margin: 20px 0px 20px 0px;
+}
+
+.ap-subtitle {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #555555;
+
+}
+
+.ap-experience {
+    margin: 16px 0px;
+}
+
+.ap-experience-title {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.ap-experience-year {
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #8f8f8f;
+    margin: 4px 0px 8px;
+}
+
+.ap-experience-excerpt {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.3em;
+    font-size: 16px;
+}
+
+.ap-education {
+    margin: 16px 0px;
+}
+
+.ap-education-degree {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.ap-education-institute {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.ap-education-year {
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #8f8f8f;
+    margin: 4px 0px 8px;
+}
+
+.ap-education-excerpt {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.3em;
+    font-size: 16px;
+}
+
+.ap-skill-category {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.ap-skill-details {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.3em;
+    font-size: 16px;
+}
+
+.ap-project {
+    margin: 16px 0px;
+}
+
+.ap-project-title {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000 !important;
+    text-decoration: none;
+}
+
+.ap-project-title:hover {
+    text-decoration: underline;
+    color: $link !important;
+}
+
+.ap-project-year {
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #8f8f8f;
+    margin: 4px 0px 8px;
+}
+
+.ap-project-excerpt {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.3em;
+    font-size: 16px;
+}
+
+.ap-project-tags {
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+    margin: 6px 0px;
+}
+
+.ap-project-tags .ap-project-chip {
+    border: 1px solid #8f8f8f;
+    border-radius: 5px;
+    padding: 2px 4px;
+}
+
+.ap-publication {
+    margin: 16px 0px;
+}
+
+.ap-publication-title {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000 !important;
+    text-decoration: none;
+}
+
+.ap-publication-title:hover {
+    text-decoration: underline;
+    color: $link !important;
+}
+
+.ap-publication-year {
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #8f8f8f;
+    margin: 4px 0px 8px;
+}
+
+.ap-publication-excerpt {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.3em;
+    font-size: 16px;
+}
+
+.ap-certification {
+    margin: 16px 0px;
+}
+
+.ap-certification-title {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000 !important;
+    text-decoration: none;
+}
+
+.ap-certification-title:hover {
+    text-decoration: underline;
+    color: $link !important;
+}
+
+.ap-certification-institute {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.ap-certification-year {
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #8f8f8f;
+    margin: 4px 0px 8px;
+}
+
+.ap-certification-excerpt {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.3em;
+    font-size: 16px;
+}
+
+.ap-achievement {
+    margin: 16px 0px;
+}
+
+.ap-achievement-title {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.ap-achievement-year {
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #8f8f8f;
+    margin: 4px 0px 8px;
+}
+
+.ap-achievement-excerpt {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.3em;
+    font-size: 16px;
+}
+
+
+.ap-footer {
+    margin: 40px 0px 20px;
+    text-align: center;
+}
+
+.ap-social {
+    text-align: center;
+}
+
+.ap-social ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.ap-social ul li {
+    float: left;
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.ap-social ul li:after {
+    content: "/";
+    padding: 0 5px;
+}
+
+.ap-social ul li:last-child:after {
+    content: "";
+}
+
+.ap-social ul li a {
+    text-decoration: none;
+    color: #999999;
+}
+
+.ap-social ul li a:hover {
+    text-decoration: underline;
+
+}
+
+.ap-social-header {
+    margin-bottom: 8px;
+}
+
+.ap-social-header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.ap-social-header ul li {
+    float: left;
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.ap-social-header ul li:after {
+    content: "/";
+    padding: 0 5px;
+}
+
+.ap-social-header ul li:last-child:after {
+    content: "";
+}
+
+.ap-social-header ul li a {
+    text-decoration: none;
+    color: #999999;
+}
+
+.ap-social-header ul li a:hover {
+    text-decoration: underline;
+    color: $link;
+}
+.ap-copyright {
+    margin: 4px 0px;
+    font-family: "Inter", serif;
+    font-size: 14px;
+    color: #999999;
+}
+
+.ap-blog-post {
+    margin: 16px 0px;
+}
+
+.ap-blog-title {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000 !important;
+}
+
+.ap-blog-title:hover {
+    color: $link !important;
+}
+
+.ap-blog-timestamp {
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #8f8f8f;
+    margin: 4px 0px 8px;
+}
+
+.ap-blog-excerpt {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.3em;
+    font-size: 16px;
+}
+
+.ap-pagination {
+    text-align: center;
+}
+
+.ap-pagination ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.ap-pagination ul li {
+    float: left;
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.ap-pagination ul li a {
+    text-decoration: none;
+    color: #000 !important;
+}
+
+.ap-pagination ul li a:hover {
+    text-decoration: underline;
+    color: $link !important;
+}
+
+@media (max-width: 768px) {
+    .ap-container {
+        margin: 0 auto;
+        margin-top: 32px;
+    }
+}

@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<!-- BLOG -->
+<div class="ap-block">
+    {% for post in site.posts %}
+    <div class="ap-blog-post">
+        <a class="ap-blog-title" href="{{ post.url }}">{{ post.title}}</a>
+        <p class="ap-blog-timestamp">{{ post.date | date: "%b %-d, %Y" }}</p>
+        <p class="ap-blog-excerpt">{{post.excerpt}}</p>
+    </div>
+    {% endfor %}
+</div>
+<!-- PAGINATION -->
+<div class="ap-pagination">
+    <ul>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+    </ul>
+</div>

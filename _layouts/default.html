@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>{{site.name}} - {{page.title}}</title>
+    <link rel="icon" type="image/png" href="path/to/favicon.png">
+    <link rel="stylesheet" href={{"assets/styles.css" | relative_url}}>
+</head>
+
+<body>
+    <div class="ap-container">
+        <img class="ap-avater" src={{"assets/images/avatar.png" | relative_url}} alt="Avatar for {{site.name}}">
+        <h1 class="ap-title">{{site.name}}</h1>
+        <h3 class="ap-tagline">{{site.tagline}}</h3>
+        <div class="ap-social-header">
+            <ul>
+                {% if site.social['email']['visibility'] == true %}<li><a
+                        href="mailto:{{site.social['email']['mail']}}">Email</a></li>{% endif %}
+                {% if site.social['linkedin']['visibility'] == true %}<li><a
+                        href="https://linkedin.com/in/{{site.social['linkedin']['handle']}}"
+                        target="_blank">LinkedIn</a></li>{% endif %}
+                {% if site.social['github']['visibility'] == true %}<li><a
+                        href="https://github.com/{{site.social['github']['handle']}}" target="_blank">GitHub</a></li>{%
+                endif %}
+                {% if site.social['twitter']['visibility'] == true %}<li><a
+                        href="https://twitter.com/{{site.social['twitter']['handle']}}" target="_blank">Twitter</a></li>
+                {% endif %}
+            </ul>
+        </div>
+        <nav class="ap-nav">
+            <ul>
+                {% for item in site.navigation %}
+                <li><a href={{item.url | relative_url}}
+                        class="{% if item.url == page.url %}ap-active{% endif %}">{{item.title}}</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
+
+        <div class="ap-line"></div>
+
+        <div class="ap-content">
+            {{content}}
+        </div>
+
+        <div class="ap-line"></div>
+        <!-- FOOTER -->
+        <div class="ap-footer">
+            <div class="ap-social">
+                <ul>
+                    {% if site.social['email']['visibility'] == true %}<li><a
+                            href="mailto:{{site.social['email']['mail']}}">Email</a></li>{% endif %}
+                    {% if site.social['linkedin']['visibility'] == true %}<li><a
+                            href="https://linkedin.com/in/{{site.social['linkedin']['handle']}}"
+                            target="_blank">LinkedIn</a></li>{% endif %}
+                    {% if site.social['github']['visibility'] == true %}<li><a
+                            href="https://github.com/{{site.social['github']['handle']}}" target="_blank">GitHub</a>
+                    </li>{% endif %}
+                    {% if site.social['twitter']['visibility'] == true %}<li><a
+                            href="https://twitter.com/{{site.social['twitter']['handle']}}" target="_blank">Twitter</a>
+                    </li>{% endif %}
+                </ul>
+            </div>
+            <div class="ap-copyright">&copy Copyright 2023</div>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
