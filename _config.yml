@@ -87,3 +87,8 @@ defaults:
       type: posts
     values:
       permalink: /:categories/:year/:month/:title
+      comments: true
+
+# Disqus Comment
+disqus:
+  shortname: academic-portfolio

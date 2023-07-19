@@ -9,3 +9,7 @@ layout: default
 <div class="ap-blog-content">
     {{content}}
 </div>
+
+{% if site.disqus.shortname %}
+  {% include disqus.html %}
+{% endif %}
