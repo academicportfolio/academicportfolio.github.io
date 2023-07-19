@@ -3,7 +3,7 @@ layout: default
 ---
 <!-- BLOG -->
 <div class="ap-block">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
     <div class="ap-blog-post">
         <a class="ap-blog-title" href="{{ post.url }}">{{ post.title}}</a>
         <p class="ap-blog-timestamp">{{ post.date | date: "%b %-d, %Y" }}</p>
@@ -14,8 +14,14 @@ layout: default
 <!-- PAGINATION -->
 <div class="ap-pagination">
     <ul>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
+        {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+        <li><em>{{ page }}</em></li>
+        {% elsif page == 1 %}
+        <li><a href="/blog">{{ page }}</a></li>
+        {% else %}
+        <li><a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a></li>
+        {% endif %}
+        {% endfor %}
     </ul>
 </div>
