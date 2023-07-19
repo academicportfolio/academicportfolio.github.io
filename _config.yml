@@ -4,7 +4,7 @@ career-objective: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
 color-theme: red # red or blue
 url: academicportfolio.github.io
 baseurl: /
-paginate: 2
+paginate: 5
 paginate_path: "/blog/page:num/"
 social:
   email: 
@@ -72,7 +72,7 @@ navigation:
 - title: Blog
   url: /blog/
 - title: Contact
-  url: /contact.html
+  url: /contact
 
 include:
   - _pages
@@ -81,3 +81,9 @@ exclude:
   - readme.md
 
 # Defaults
+defaults:
+  - scope:
+      path: ''
+      type: posts
+    values:
+      permalink: /:categories/:year/:month/:title
