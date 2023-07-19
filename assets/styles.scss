@@ -530,6 +530,35 @@ a:hover {
     color: $link !important;
 }
 
+.ap-form-container {
+    margin: 28px auto;
+    background-color: #fff;
+  }
+  
+  .ap-form-container input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+  }
+  
+  .ap-form-container input[type="submit"] {
+    background-color: #555555;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .ap-form-container input[type="submit"]:hover {
+    background-color: $link;
+  }
+
 @media (max-width: 768px) {
     .ap-container {
         margin: 0 auto;
