@@ -87,6 +87,21 @@ layout: default
 </div>
 {% endif %}
 
+{% if site.collection_option['volunteerexperience']['visibility'] == true %}
+<div class="ap-line"></div>
+<!-- VOLUNTEER EXPERIENCE -->
+<div class="ap-block">
+    <p class="ap-subtitle">{{site.collection_option['volunteerexperience']['label']}}</p>
+    {% for experience in site.volunteerexperience %}
+    <div class="ap-experience">
+        <p class="ap-experience-title">{{experience.title}}</p>
+        <p class="ap-experience-year">{{experience.duration}}</p>
+        <p class="ap-experience-excerpt">{{experience.excerpt}}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+
 {% if site.collection_option['certifications']['visibility'] == true %}
 <div class="ap-line"></div>
 <!-- CERTIFICATIONS -->

@@ -1,6 +1,6 @@
 name: Arnob Karmokar
 tagline: Electrical and Electronic Engineer
-career-objective: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac sapien vel sem tristique consequat ac eu magna. Nulla condimentum erat quis enim tempor consequat. Duis tincidunt tortor nec eleifend sollicitudin. Ut elementum purus nibh, at laoreet lorem hendrerit a. Proin est nulla, tempus ut ultrices nec, efficitur eu lorem. Ut dapibus eros at arcu viverra venenatis.
+career-objective: This is a GitHub Pages template for academic portfolio websites. Fork <a href="https://github.com/academicportfolio/academicportfolio.github.io">this repository</a> to get started. This section will be replaced by your career objective. Read the README of the repository to learn about customizing the site.
 color-theme: red # red or blue
 avatar-filename: avatar.png # Change to your avatar's filename
 url: academicportfolio.github.io
@@ -40,6 +40,9 @@ collections:
   publications:
     output: true
     sort_by: year
+  volunteerexperience:
+    output: false
+    sort_by: order
   certifications:
     output: false
     sort_by: year
@@ -63,6 +66,9 @@ collection_option:
     visibility: true
   publications: 
     label: Publications
+    visibility: true
+  volunteerexperience: 
+    label: Volunteer Experience
     visibility: true
   certifications: 
     label: Certifications
@@ -100,14 +106,14 @@ defaults:
     values:
       permalink: /projects/:title
       layout: project
-      comments: true
+      comments: false
   - scope:
       path: ''
       type: publications
     values:
       permalink: /publications/:title
       layout: publication
-      comments: true
+      comments: false
 
 # Disqus Comment
 disqus:
