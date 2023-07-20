@@ -87,12 +87,21 @@ defaults:
       type: posts
     values:
       permalink: /:categories/:year/:month/:title
+      layout: post
       comments: true
   - scope:
       path: ''
       type: projects
     values:
       permalink: /projects/:title
+      layout: project
+      comments: true
+  - scope:
+      path: ''
+      type: publications
+    values:
+      permalink: /publications/:title
+      layout: publication
       comments: true
 
 # Disqus Comment

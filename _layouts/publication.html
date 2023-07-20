@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<h2 class="ap-publication-title-single">{{page.title}}</h2>
+<p class="ap-publication-timestamp-single">{{page.year}}</p>
+<img class="ap-publication-featured-single" src="{{page.pub-image}}"/>
+{% if page.pub-url %}
+<br>
+<p class="ap-publication-url-single">URL: <a href="{{page.pub-url}}" target="_blank">{{page.pub-url}}</a></p>
+{% endif %}
+
+{% if content %}
+<div class="ap-publication-content">
+    <h2>Publication Details</h2>
+    {{content}}
+</div>
+{% endif %}
+{% if site.disqus.shortname %}
+  {% include disqus.html %}
+{% endif %}
