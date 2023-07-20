@@ -45,5 +45,12 @@ formspree:
   endpoint: <form's endpoint> # e.g https://formspree.io/f/xxxxxxx
 ```
 
+## Adding Google Analytics Tracking
+- Login to [Google Analytics](https://analytics.google.com/) and create a new property to receive a Tracking ID for your website.
+- Edit your `_config.yml` of github, make sure it contains following content:
+```
+google_analytics: UA—XXXXXXXX-X
+```
+
 ## Bug Report/Feature Request
 - To report bugs or to request new features, please create a new [issue](https://github.com/academicportfolio/academicportfolio.github.io/issues) and use appropriate label with the issue.

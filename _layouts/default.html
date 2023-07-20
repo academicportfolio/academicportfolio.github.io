@@ -11,11 +11,15 @@
     <title>{{site.name}} - {{page.title}}</title>
     <link rel="icon" type="image/png" href={{"assets/favicon.png" | relative_url}}>
     <link rel="stylesheet" href={{"assets/styles.css" | relative_url}}>
+    {% if site.google_analytics %}
+    {% include analytics.html %}
+    {% endif %}
 </head>
 
 <body>
     <div class="ap-container">
-        <img class="ap-avater" src={{"assets/images/" | append: site.avatar-filename | relative_url}} alt="Avatar for {{site.name}}">
+        <img class="ap-avater" src={{"assets/images/" | append: site.avatar-filename | relative_url}}
+            alt="Avatar for {{site.name}}">
         <h1 class="ap-title">{{site.name}}</h1>
         <h3 class="ap-tagline">{{site.tagline}}</h3>
         <div class="ap-social-header">
