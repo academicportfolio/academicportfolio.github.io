@@ -9,13 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&display=swap" rel="stylesheet">
     <title>{{site.name}} - {{page.title}}</title>
-    <link rel="icon" type="image/png" href="path/to/favicon.png">
+    <link rel="icon" type="image/png" href={{"assets/favicon.png" | relative_url}}>
     <link rel="stylesheet" href={{"assets/styles.css" | relative_url}}>
 </head>
 
 <body>
     <div class="ap-container">
-        <img class="ap-avater" src={{"assets/images/avatar.png" | relative_url}} alt="Avatar for {{site.name}}">
+        <img class="ap-avater" src={{"assets/images/" | append: site.avatar-filename | relative_url}} alt="Avatar for {{site.name}}">
         <h1 class="ap-title">{{site.name}}</h1>
         <h3 class="ap-tagline">{{site.tagline}}</h3>
         <div class="ap-social-header">

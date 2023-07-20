@@ -2,10 +2,13 @@ name: Arnob Karmokar
 tagline: Electrical and Electronic Engineer
 career-objective: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac sapien vel sem tristique consequat ac eu magna. Nulla condimentum erat quis enim tempor consequat. Duis tincidunt tortor nec eleifend sollicitudin. Ut elementum purus nibh, at laoreet lorem hendrerit a. Proin est nulla, tempus ut ultrices nec, efficitur eu lorem. Ut dapibus eros at arcu viverra venenatis.
 color-theme: red # red or blue
+avatar-filename: avatar.png # Change to your avatar's filename
 url: academicportfolio.github.io
 baseurl: /
 paginate: 5
 paginate_path: "/blog/page:num/"
+
+# Social Information
 social:
   email: 
     visibility: true
@@ -20,6 +23,7 @@ social:
     visibility: true
     handle: arnobdotme
 
+# Collections
 collections:
   experience:
     output: false
@@ -43,6 +47,7 @@ collections:
     output: false
     sort_by: year
 
+# About Page Options
 collection_option:
   experience: 
     label: Experience
