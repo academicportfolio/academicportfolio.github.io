@@ -445,7 +445,7 @@ a:hover {
     font-size: 16px;
 }
 
-.ap-blog-title-single {
+.ap-blog-title-single, .ap-project-title-single {
     font-family: "DM Sans", sans-serif;
     font-size: 28px;
     font-weight: 600;
@@ -453,7 +453,7 @@ a:hover {
     margin-bottom: 4px;
 }
 
-.ap-blog-timestamp-single {
+.ap-blog-timestamp-single, .ap-project-timestamp-single {
     font-family: "DM Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -461,21 +461,22 @@ a:hover {
     margin: 4px 0px 8px;
 }
 
-.ap-blog-featured-single {
+.ap-blog-featured-single, .ap-project-featured-single {
     width: 100%;
     border-radius: 8px;
     margin: 16px 0px 16px;
 }
 
-.ap-blog-content {
+.ap-blog-content, .ap-project-content {
+    margin: 12px auto;
     color: #000 !important;
 }
-.ap-blog-content h1,h2,h3,h4,h5,h6 {
+.ap-blog-content h1,h2,h3,h4,h5,h6, .ap-project-content h1,h2,h3,h4,h5,h6 {
     font-family: 'DM Sans', sans-serif;
     margin: 8px 0px;
 }
 
-.ap-blog-content blockquote {
+.ap-blog-content blockquote, .ap-project-content blockquote {
     margin: 10px 0 10px;
     padding: 10px 15px;
     background-color: #f9f9f9;
@@ -484,22 +485,25 @@ a:hover {
     line-height: 1.5;
 }
 
-.ap-blog-content table {
+.ap-blog-content table, .ap-project-content table {
     border-collapse: collapse;
     width: 100%;
     margin: 1rem 0;
 }
   
-.ap-blog-content th, td {
+.ap-blog-content th, td, .ap-project-content th, td {
     padding: 0.5rem;
     border: 1px solid #ccc;
 }
   
-.ap-blog-content th {
+.ap-blog-content th, .ap-project-content th {
     text-align: left;
     background-color: #f9f9f9;
 }
-
+.ap-project-url-single {
+    color: #000;
+    overflow-wrap: break-word;
+}
 .ap-pagination {
     text-align: center;
 }

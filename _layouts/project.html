@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<h2 class="ap-project-title-single">{{page.title}}</h2>
+<p class="ap-project-timestamp-single">{{page.year}}</p>
+<img class="ap-project-featured-single" src="{{page.project-image}}"/>
+{% if page.project-url %}
+<br>
+<p class="ap-project-url-single">URL: <a href="{{page.project-url}}" target="_blank">{{page.project-url}}</a></p>
+{% endif %}
+
+{% if content %}
+<div class="ap-project-content">
+    <h2>Project Details</h2>
+    {{content}}
+</div>
+{% endif %}
+{% if site.disqus.shortname %}
+  {% include disqus.html %}
+{% endif %}

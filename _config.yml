@@ -88,6 +88,12 @@ defaults:
     values:
       permalink: /:categories/:year/:month/:title
       comments: true
+  - scope:
+      path: ''
+      type: projects
+    values:
+      permalink: /projects/:title
+      comments: true
 
 # Disqus Comment
 disqus:
