@@ -103,7 +103,7 @@ layout: default
     <p class="ap-subtitle">{{site.collection_option['volunteerexperience']['label']}}</p>
     {% for experience in site.volunteerexperience %}
     <div class="ap-experience">
-        <p class="ap-experience-title">{{experience.title}}</p>
+        <p class="ap-experience-title">{{experience.title}}, <a href="{{experience.institute-url}}">{{experience.institute}}</a></p>
         <p class="ap-experience-year">{{experience.duration}}</p>
         <p class="ap-experience-excerpt">{{experience.excerpt}}</p>
     </div>
