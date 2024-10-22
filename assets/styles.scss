@@ -639,3 +639,30 @@ textarea {
         margin-top: 32px;
     }
 }
+
+.ap-404-title {
+    font-family: "Syne", serif;
+    font-size: 128px;
+    text-align: center;
+    margin-top: 128;
+    margin-bottom: 64px;
+    margin-top: 64px;
+}
+
+.ap-404-subtitle {
+    font-family: "Syne", serif;
+    font-size: 36px;
+    line-height: 1em;
+    text-align: center;
+}
+
+.ap-404-details {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.ap-404-details a {
+    color: $link;
+    text-decoration: none;
+}
