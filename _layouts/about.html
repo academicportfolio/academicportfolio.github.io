@@ -50,7 +50,11 @@ layout: default
     {% for skill in site.skills %}
     <div class="ap-skill">
         <p class="ap-skill-category">{{skill.category}}</p>
-        <p class="ap-skill-details">{{skill.details}}</p>
+        <p class="ap-skill-tags">
+            {% for tag in skill.tags %}
+            <span class="ap-skill-chip">{{tag}}</span>
+            {% endfor %}
+        </p>
     </div>
     {% endfor %}
 </div>
