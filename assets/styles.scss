@@ -122,6 +122,11 @@ a:hover {
     font-weight: 600;
 }
 
+.ap-experience-title a {
+    color: $link;
+    text-decoration: none;
+}
+
 .ap-experience-year {
     font-family: "DM Sans", sans-serif;
     font-size: 14px;
@@ -135,6 +140,21 @@ a:hover {
     font-weight: 400;
     line-height: 1.3em;
     font-size: 16px;
+}
+
+.ap-experience-tags {
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+    margin: 6px 0px;
+}
+
+.ap-experience-tags .ap-experience-chip {
+    border: 1px solid $link;
+    border-radius: 5px;
+    padding: 2px 4px;
+    color: $link;
 }
 
 .ap-education {
@@ -190,7 +210,7 @@ a:hover {
     font-family: "DM Sans", sans-serif;
     font-size: 18px;
     font-weight: 600;
-    color: #000 !important;
+    color: $link !important;
     text-decoration: none;
 }
 
@@ -223,9 +243,10 @@ a:hover {
 }
 
 .ap-project-tags .ap-project-chip {
-    border: 1px solid #8f8f8f;
+    border: 1px solid $link;
     border-radius: 5px;
     padding: 2px 4px;
+    color: $link;
 }
 
 .ap-publication {
@@ -408,6 +429,7 @@ a:hover {
     text-decoration: underline;
     color: $link;
 }
+
 .ap-copyright {
     margin: 4px 0px;
     font-family: "Inter", serif;
@@ -445,7 +467,9 @@ a:hover {
     font-size: 16px;
 }
 
-.ap-blog-title-single, .ap-project-title-single, .ap-publication-title-single {
+.ap-blog-title-single,
+.ap-project-title-single,
+.ap-publication-title-single {
     font-family: "DM Sans", sans-serif;
     font-size: 28px;
     font-weight: 600;
@@ -453,7 +477,9 @@ a:hover {
     margin-bottom: 4px;
 }
 
-.ap-blog-timestamp-single, .ap-project-timestamp-single, .ap-publication-timestamp-single {
+.ap-blog-timestamp-single,
+.ap-project-timestamp-single,
+.ap-publication-timestamp-single {
     font-family: "DM Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -461,22 +487,46 @@ a:hover {
     margin: 4px 0px 8px;
 }
 
-.ap-blog-featured-single, .ap-project-featured-single, .ap-publication-featured-single {
+.ap-blog-featured-single,
+.ap-project-featured-single,
+.ap-publication-featured-single {
     width: 100%;
     border-radius: 8px;
     margin: 16px 0px 16px;
 }
 
-.ap-blog-content, .ap-project-content, .ap-publication-content {
+.ap-blog-content,
+.ap-project-content,
+.ap-publication-content {
     margin: 12px auto;
     color: #000 !important;
 }
-.ap-blog-content h1,h2,h3,h4,h5,h6, .ap-project-content h1,h2,h3,h4,h5,h6, .ap-publication-content h1,h2,h3,h4,h5,h6 {
+
+.ap-blog-content h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.ap-project-content h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.ap-publication-content h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'DM Sans', sans-serif;
     margin: 8px 0px;
 }
 
-.ap-blog-content blockquote, .ap-project-content blockquote, .ap-publication-content blockquote {
+.ap-blog-content blockquote,
+.ap-project-content blockquote,
+.ap-publication-content blockquote {
     margin: 10px 0 10px;
     padding: 10px 15px;
     background-color: #f9f9f9;
@@ -485,25 +535,37 @@ a:hover {
     line-height: 1.5;
 }
 
-.ap-blog-content table, .ap-project-content table, .ap-publication-content table {
+.ap-blog-content table,
+.ap-project-content table,
+.ap-publication-content table {
     border-collapse: collapse;
     width: 100%;
     margin: 1rem 0;
 }
-  
-.ap-blog-content th, td, .ap-project-content th, td, .ap-publication-content th, td {
+
+.ap-blog-content th,
+td,
+.ap-project-content th,
+td,
+.ap-publication-content th,
+td {
     padding: 0.5rem;
     border: 1px solid #ccc;
 }
-  
-.ap-blog-content th, .ap-project-content th, .ap-publication-content th {
+
+.ap-blog-content th,
+.ap-project-content th,
+.ap-publication-content th {
     text-align: left;
     background-color: #f9f9f9;
 }
-.ap-project-url-single, .ap-publication-url-single {
+
+.ap-project-url-single,
+.ap-publication-url-single {
     color: #000;
     overflow-wrap: break-word;
 }
+
 .ap-pagination {
     text-align: center;
 }
@@ -537,31 +599,31 @@ a:hover {
 .ap-form-container {
     margin: 28px auto;
     background-color: #fff;
-  }
-  
-  .ap-form-container input[type="text"],
-  input[type="email"],
-  textarea {
+}
+
+.ap-form-container input[type="text"],
+input[type="email"],
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     margin-bottom: 16px;
-  }
-  
-  .ap-form-container input[type="submit"] {
+}
+
+.ap-form-container input[type="submit"] {
     background-color: #555555;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  .ap-form-container input[type="submit"]:hover {
+}
+
+.ap-form-container input[type="submit"]:hover {
     background-color: $link;
-  }
+}
 
 @media (max-width: 768px) {
     .ap-container {
